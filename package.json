@@ -1,0 +1,11 @@
+{
+  "name": "qwen3.5-webgpu-minimal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

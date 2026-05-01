@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwen3.5 WebGPU Minimal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main id="messages" aria-live="polite"></main>
+
+    <div id="loadStatus" class="load-status" aria-live="polite">
+      <div id="loadText">Loading model...</div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <div id="imagePreview" class="image-preview" hidden>
+      <img id="previewImage" alt="Selected image" />
+      <span>Image attached</span>
+    </div>
+
+    <form id="composer" autocomplete="off">
+      <input id="imageInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp" hidden />
+      <button id="imageButton" type="button" aria-label="Add picture">Picture</button>
+      <textarea id="prompt" rows="1" placeholder="Enter an English sentence."></textarea>
+      <button id="sendButton" type="submit" aria-label="Send">Send</button>
+    </form>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
