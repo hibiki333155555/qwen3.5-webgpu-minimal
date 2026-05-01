@@ -2,7 +2,7 @@
 
 An intentionally minimal local WebGPU LLM demo for Qwen3.5 0.8B ONNX through Transformers.js.
 
-![Qwen3.5 WebGPU Minimal demo](assets/qwen35-webgpu-minimal-demo.gif)
+![Qwen3.5 WebGPU Minimal demo](qwen35-webgpu-minimal-demo.gif)
 
 ## Run
 
